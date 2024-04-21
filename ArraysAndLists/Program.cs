@@ -50,8 +50,10 @@ namespace ArraysAndLists
             /* Using a for loop,
              * display the numbers in your "odds" list
              */
-             foreach (var num in Odds)
-             {Console.WriteLine(num);}
+            for (var i = 0; i < Odds.Count; i++)
+            {
+                Console.WriteLine(Odds[i]);
+            }
         }
     }
     }
