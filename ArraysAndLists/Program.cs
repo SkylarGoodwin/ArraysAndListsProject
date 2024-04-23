@@ -17,12 +17,12 @@ namespace ArraysAndLists
             /* Create a list of type int
              * Name the list "evens"
              */
-            var Evens = new List<int>();
+            var evens = new List<int>();
             
             /* Create another list of type int
              * Name the list "odds"
              */
-            var Odds = new List<int> ();
+            var odds = new List<int> ();
 
              /* Using either a foreach or for loop,
              * iterate through the array you populated with 10 numbers.
@@ -32,11 +32,11 @@ namespace ArraysAndLists
              * If the number is odd, add it to the odds list.
              */
              foreach (var num in numbers){
-             if (num % 2 == 0){Evens.Add(num);}
+             if (num % 2 == 0){evens.Add(num);}
              
              else
              {
-                Odds.Add(num);
+                odds.Add(num);
              }}
 
 
@@ -44,15 +44,15 @@ namespace ArraysAndLists
             /* Using a foreach loop,
              * display the numbers in your "evens" list
              */
-            foreach (var num in Evens)
+            foreach (var num in evens)
             {Console.WriteLine(num);}
 
             /* Using a for loop,
              * display the numbers in your "odds" list
              */
-            for (var i = 0; i < Odds.Count; i++)
+            for (var i = 0; i < odds.Count; i++)
             {
-                Console.WriteLine(Odds[i]);
+                Console.WriteLine(odds[i]);
             }
         }
     }
